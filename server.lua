@@ -32,7 +32,7 @@ AddEventHandler("playerConnecting", function (name, setKickReason, deferrals)
     IP = (string.gsub(string.gsub(string.gsub(IP,  "-", ""), ",", ""), " ", ""):lower())
     local g, f = IP:find(string.lower("192.168"))
     if g or f then
-        IP = "178.131.122.181"
+        IP = "178.131.122.181"   -- they will print if you host on loalhost!
     end
     for _, DATA in ipairs(GetPlayerIdentifiers(SRC)) do
         if DATA:match("steam") then
